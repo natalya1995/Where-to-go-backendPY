@@ -1,0 +1,24 @@
+# Python/Django
+__pycache__/
+*.py[cod]
+*.sqlite3
+db.sqlite3
+
+# Envs
+.venv/
+env/
+venv/
+
+# Django static/media (генерится/загружается — в гит не надо)
+.static/
+.media/
+static/
+media/
+
+# Editors/OS
+.vscode/
+.idea/
+.DS_Store
+
+# Bytecode cache
+*.egg-info/

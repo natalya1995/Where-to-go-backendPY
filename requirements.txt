@@ -1,0 +1,11 @@
+asgiref==3.10.0
+bleach==6.2.0
+Django==4.2.16
+django-admin-sortable2==2.2.8
+django-cors-headers==4.9.0
+django-filter==24.3
+django-summernote==0.8.20.0
+djangorestframework==3.15.2
+pillow==10.4.0
+sqlparse==0.5.3
+webencodings==0.5.1
