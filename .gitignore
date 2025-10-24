@@ -9,12 +9,6 @@ db.sqlite3
 env/
 venv/
 
-# Django static/media (генерится/загружается — в гит не надо)
-.static/
-.media/
-static/
-media/
-
 # Editors/OS
 .vscode/
 .idea/
