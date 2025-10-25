@@ -27,11 +27,11 @@ INSTALLED_APPS = [
     'django_summernote',
 ]
 
-# --- Middleware (ВАЖНО: corsheaders выше CommonMiddleware) ---
+# --- Middleware  ---
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'corsheaders.middleware.CorsMiddleware',  # ← подняли выше
+    'corsheaders.middleware.CorsMiddleware', 
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -44,7 +44,7 @@ ROOT_URLCONF = 'where_to_go.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],  # добавишь, если будут свои шаблоны вне apps
+        'DIRS': [],  
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -77,11 +77,11 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # --- Локаль/время ---
 LANGUAGE_CODE = 'en-us'
-TIME_ZONE = 'UTC'      # можно поменять на 'Asia/Almaty', если хочешь
+TIME_ZONE = 'UTC'    
 USE_I18N = True
 USE_TZ = True
 
-# --- Статика/медиа (папки с точкой — норм, просто чуть «скрытые») ---
+# --- Статика/медиа ---
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / '.static'
 
@@ -101,5 +101,4 @@ CORS_ALLOWED_ORIGINS = [
      "https://wheretogo.pythonanywhere.com",
  ]
 
-# Лайфхак для Summernote, если нужны iframe:
 X_FRAME_OPTIONS = 'SAMEORIGIN'
